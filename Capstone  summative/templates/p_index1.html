@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    .inner{
+
+        background-image:url("/static/images/registration-form-2.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+
+
+    }
+    </style>
+	<head>
+		<meta charset="utf-8">
+		<title>Propeller Analysis</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="static/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="static/style.css">
+	</head>
+
+	<body text = "white">
+
+		<div class="wrapper" style="background-image: url('images/bg-registration-form-2.jpg');">
+			<div class="inner">
+				<form action="/analyze" method="POST">
+					<h3>PROPELLER SELECTION</h3>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for=""><b>Days of Forecast (Max : 7 Days)</b></label>
+							<input name="days" type="text" class="form-control">
+						</div>
+
+					</div>
+					<div class="form-wrapper">
+						<label for=""><b>Location</b></label>
+						<input name="location" type="text" class="form-control">
+					</div>
+					<div class="form-wrapper">
+						<label for=""><b>Height (Max : 180ft)</b></label>
+						<input name="height" type="text" class="form-control">
+					</div>
+					<div class="form-wrapper">
+						<label for=""><b>Weight (Max : 10kg)</b></label>
+						<input name="weight" type="text" class="form-control">
+
+					<button type="submit">Analyze</button>
+				</form>
+			</div>
+		</div>
+
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
